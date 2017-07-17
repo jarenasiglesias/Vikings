@@ -1,12 +1,12 @@
 var Population = function (name, health, strength){
-	this.name = name;
 	this.health = health;
 	this.strength =strength;
+	this.name = name;
 };
 
-viking1 = new Population ("Ragnarok", 1000, 150);
-viking2 = new Population ("Asgard", 1500, 250);
-viking3 = new Population ("Fernandito", 2000, 100);
+viking1 = new Population (1000, 150, "Ragnarok");
+viking2 = new Population (1500, 250, "Asgard");
+viking3 = new Population (2000, 100, "Fernandito");
 
 var SaxonPopulation = function (health, strength){
 	this.health = health;
@@ -25,3 +25,8 @@ saxon5 = new SaxonPopulation (getRandomInt(150,500),getRandomInt(50,150));
 saxon6 = new SaxonPopulation (getRandomInt(150,500),getRandomInt(50,150));
 saxon7 = new SaxonPopulation (getRandomInt(150,500),getRandomInt(50,150));
 saxon8 = new SaxonPopulation (getRandomInt(150,500),getRandomInt(50,150));
+
+function finalFight(){
+	var roundNumber = getRandomInt(5,8);
+
+}

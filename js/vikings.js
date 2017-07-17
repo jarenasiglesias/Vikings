@@ -13,11 +13,15 @@ var SaxonPopulation = function (health, strength){
 	this.strength = strength;
 };
 
-saxon1 = new SaxonPopulation (Math.floor(Math.random() * 350) + 150,Math.floor(Math.random() * 100) + 50 );
-saxon2 = new SaxonPopulation (Math.floor(Math.random() * 350) + 150,Math.floor(Math.random() * 100) + 50 );
-saxon3 = new SaxonPopulation (Math.floor(Math.random() * 350) + 150,Math.floor(Math.random() * 100) + 50 );
-saxon4 = new SaxonPopulation (Math.floor(Math.random() * 350) + 150,Math.floor(Math.random() * 100) + 50 );
-saxon5 = new SaxonPopulation (Math.floor(Math.random() * 350) + 150,Math.floor(Math.random() * 100) + 50 );
-saxon6 = new SaxonPopulation (Math.floor(Math.random() * 350) + 150,Math.floor(Math.random() * 100) + 50 );
-saxon7 = new SaxonPopulation (Math.floor(Math.random() * 350) + 150,Math.floor(Math.random() * 100) + 50 );
-saxon8 = new SaxonPopulation (Math.floor(Math.random() * 350) + 150,Math.floor(Math.random() * 100) + 50 );
+function getRandomInt (min,max){
+	return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+saxon1 = new SaxonPopulation (getRandomInt(150,500),getRandomInt(50,150));
+saxon2 = new SaxonPopulation (getRandomInt(150,500),getRandomInt(50,150));
+saxon3 = new SaxonPopulation (getRandomInt(150,500),getRandomInt(50,150));
+saxon4 = new SaxonPopulation (getRandomInt(150,500),getRandomInt(50,150));
+saxon5 = new SaxonPopulation (getRandomInt(150,500),getRandomInt(50,150));
+saxon6 = new SaxonPopulation (getRandomInt(150,500),getRandomInt(50,150));
+saxon7 = new SaxonPopulation (getRandomInt(150,500),getRandomInt(50,150));
+saxon8 = new SaxonPopulation (getRandomInt(150,500),getRandomInt(50,150));

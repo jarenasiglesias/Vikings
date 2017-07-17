@@ -39,9 +39,6 @@ var SaxonPopulation = function (health, strength){
 	this.strength = strength;
 };
 
-
-
-
 saxon1 = new SaxonPopulation (getRandomInt(150,500),getRandomInt(50,150));
 saxon2 = new SaxonPopulation (getRandomInt(150,500),getRandomInt(50,150));
 saxon3 = new SaxonPopulation (getRandomInt(150,500),getRandomInt(50,150));

@@ -21,7 +21,7 @@ function vikingGenerator (numViking){
   	var vikingArray = [];
   	var viking={};
   	for (i=0; i<=numViking; i++) {
-    	viking[i] = new Population (getRandomInt(150,300),getRandomInt(50,100), vikingName[i], vikingShout[getRandomInt(0,10)]);
+    	viking[i] = new Population (getRandomInt(1000,2000),getRandomInt(100,250), vikingName[i], vikingShout[getRandomInt(0,10)]);
     	vikingArray.push(viking[i]);
   	}
   	return vikingArray;
@@ -59,7 +59,7 @@ function saxonGenerator (numSaxon){
   	var saxonArray = [];
   	var saxon={};
   	for (i=0; i<=numSaxon; i++) {
-    	saxon[i] = new SaxonPopulation (getRandomInt(150,300),getRandomInt(50,100));
+    	saxon[i] = new SaxonPopulation (getRandomInt(150,300),getRandomInt(20,60));
     	saxonArray.push(saxon[i]);
   	}
   	return saxonArray;
@@ -75,17 +75,11 @@ var numSaxons = saxonGenerator(20);
 function assaultFight(){
 
   	var roundNumber = getRandomInt(5,8);
-  	var vikingFighter1Life = vikingArray [1].health;
-  	var vikingFighter2Life = vikingFighter2.health;
   	for (var i=0; i<=roundNumber; i++){
-   		vikingFighter1Life = vikingFighter1Life - vikingFighter2.strength;
-    	vikingFighter2Life = vikingFighter2Life - vikingFighter1.strength;
-    	if (vikingFighter1Life <= 251 || vikingFighter2Life <= 251) {
-     		i=9;
-    	}
+  		numSaxons(getRandomInt(0,numSaxon.length-1)).health = this.numSaxons.health - numVikings[i].strength
+  		console.log (numSaxons.health[i]);
   	} 
-  	console.log (vikingFighter1.name +" tiene "+ vikingFighter1Life + " puntos de vida");
-  	console.log (vikingFighter2.name +" tiene "+ vikingFighter2Life + " puntos de vida");
+  	
 }
 
 

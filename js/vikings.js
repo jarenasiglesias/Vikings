@@ -21,7 +21,7 @@ function vikingGenerator (numViking){
   	var vikingArray = [];
   	var viking={};
   	for (i=0; i<=numViking; i++) {
-    	viking[i] = new Population (getRandomInt(150,300),getRandomInt(50,100), vikingName[i], vikingShout[getRandomInt(0,10)]);
+    	viking[i] = new Population (getRandomInt(1000,3000),getRandomInt(250,500), vikingName[i], vikingShout[getRandomInt(0,10)]);
     	vikingArray.push(viking[i]);
   	}
   	return vikingArray;
